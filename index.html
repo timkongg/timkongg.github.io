@@ -130,42 +130,42 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div>
-                                <canvas id="STLRisksisRobot"  style="width: 60%; height: 500px;"></canvas>
-                            </div>
-                            <script>
+                                <canvas id="STLRisksisRobot"  style="width: 60%; height: 500px; background-color: black;"></canvas>
+                                <script>
 
-                                // Load ASCII STL model
-                                var scene = new xeogl.Scene({
-                                    canvas: "STLRisksisRobot",
-                                    transparent: true
-                                });
-                            
-                                xeogl.setDefaultScene(scene);
-                            
-                                var model = new xeogl.STLModel({
-                                    src: "CAD/RisksisRobot.stl",
-                                    smoothNormals: true
-                                });
-                            
-                                // User camera control
-                            
-                                new xeogl.CameraControl();
-                            
-                                // Initial camera position
-                            
-                                var camera = scene.camera;
-                            
-                                camera.eye = [820, 605, 818];
-                                camera.look = [10.90, 10.90, 8];
-                                camera.up = [-0.236, 0.8853, -0.371246];
-                            
-                                // Orbit camera
-                            
-                                scene.on("tick", function () {
-                                    camera.orbitYaw(-0.2);
-                                });
-                            
-                            </script>
+                                    // Load ASCII STL model
+                                    var scene = new xeogl.Scene({
+                                        canvas: "STLRisksisRobot",
+                                        transparent: true
+                                    });
+                                
+                                    xeogl.setDefaultScene(scene);
+                                
+                                    var model = new xeogl.STLModel({
+                                        src: "CAD/RisksisRobot.stl",
+                                        smoothNormals: true
+                                    });
+                                
+                                    // User camera control
+                                
+                                    new xeogl.CameraControl();
+                                
+                                    // Initial camera position
+                                
+                                    var camera = scene.camera;
+                                
+                                    camera.eye = [820, 605, 818];
+                                    camera.look = [10.90, 10.90, 8];
+                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                
+                                    // Orbit camera
+                                
+                                    scene.on("tick", function () {
+                                        camera.orbitYaw(-0.2);
+                                    });
+                                
+                                </script>
+                            </div>                            
                         </div>
                     </div>   
 
@@ -176,6 +176,117 @@
                                 <source src="videos/FSAE.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                            <div>
+                                <canvas id="STLBattery"  style="width: 60%; height: 500px; background-color: black;"></canvas>
+                                <script>
+
+                                    // Load ASCII STL model
+                                    var scene = new xeogl.Scene({
+                                        canvas: "STLBattery",
+                                        transparent: true
+                                    });
+                                
+                                    xeogl.setDefaultScene(scene);
+                                
+                                    var model = new xeogl.STLModel({
+                                        src: "CAD/BatteryBox.stl",
+                                        smoothNormals: true
+                                    });
+                                
+                                    // User camera control
+                                
+                                    new xeogl.CameraControl();
+                                
+                                    // Initial camera position
+                                
+                                    var camera = scene.camera;
+                                
+                                    camera.eye = [820, 605, 818];
+                                    camera.look = [10.90, 10.90, 8];
+                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                
+                                    // Orbit camera
+                                
+                                    scene.on("tick", function () {
+                                        camera.orbitYaw(-0.2);
+                                    });
+                                
+                                </script>
+                            </div>
+                            <div>
+                                <canvas id="STLSteering"  style="width: 60%; height: 500px; background-color: black;"></canvas>
+                                <script>
+
+                                    // Load ASCII STL model
+                                    var scene = new xeogl.Scene({
+                                        canvas: "STLSteering",
+                                        transparent: true
+                                    });
+                                
+                                    xeogl.setDefaultScene(scene);
+                                
+                                    var model = new xeogl.STLModel({
+                                        src: "CAD/Steering.stl",
+                                        smoothNormals: true
+                                    });
+                                
+                                    // User camera control
+                                
+                                    new xeogl.CameraControl();
+                                
+                                    // Initial camera position
+                                
+                                    var camera = scene.camera;
+                                
+                                    camera.eye = [820, 605, 818];
+                                    camera.look = [10.90, 10.90, 8];
+                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                
+                                    // Orbit camera
+                                
+                                    scene.on("tick", function () {
+                                        camera.orbitYaw(-0.2);
+                                    });
+                                
+                                </script>
+                            </div>
+                            <div>
+                                <canvas id="STLPedal"  style="width: 60%; height: 500px; background-color: black;"></canvas>
+                                <script>
+
+                                    // Load ASCII STL model
+                                    var scene = new xeogl.Scene({
+                                        canvas: "STLPedal",
+                                        transparent: true
+                                    });
+                                
+                                    xeogl.setDefaultScene(scene);
+                                
+                                    var model = new xeogl.STLModel({
+                                        src: "CAD/Pedal.stl",
+                                        smoothNormals: true
+                                    });
+                                
+                                    // User camera control
+                                
+                                    new xeogl.CameraControl();
+                                
+                                    // Initial camera position
+                                
+                                    var camera = scene.camera;
+                                
+                                    camera.eye = [820, 605, 818];
+                                    camera.look = [10.90, 10.90, 8];
+                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                
+                                    // Orbit camera
+                                
+                                    scene.on("tick", function () {
+                                        camera.orbitYaw(-0.2);
+                                    });
+                                
+                                </script>
+                            </div>
                             <p>Formula SAE is a student design competition organized by SAE International. The competition was started in 1980 by the SAE student branch at the University of Texas at Austin after a prior asphalt racing competition proved to be unsustainable.<br>
                                 I am the head accumulator (battery box) designer in season 2020, and the steering and pedal designer in season 2019.
                             </p>
@@ -189,6 +300,43 @@
                                 <source src="videos/Rescue Robot.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                            <div>
+                                <canvas id="STLRescueRobot"  style="width: 60%; height: 500px; background-color: black;"></canvas>
+                                <script>
+
+                                    // Load ASCII STL model
+                                    var scene = new xeogl.Scene({
+                                        canvas: "STLRescueRobot",
+                                        transparent: true
+                                    });
+                                
+                                    xeogl.setDefaultScene(scene);
+                                
+                                    var model = new xeogl.STLModel({
+                                        src: "CAD/RescueRobot.stl",
+                                        smoothNormals: true
+                                    });
+                                
+                                    // User camera control
+                                
+                                    new xeogl.CameraControl();
+                                
+                                    // Initial camera position
+                                
+                                    var camera = scene.camera;
+                                
+                                    camera.eye = [820, 605, 818];
+                                    camera.look = [10.90, 10.90, 8];
+                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                
+                                    // Orbit camera
+                                
+                                    scene.on("tick", function () {
+                                        camera.orbitYaw(-0.2);
+                                    });
+                                
+                                </script>
+                            </div>
                             <p>This project involves designing a rescue robot in collaboration with a team of mechanical engineering and electronic engineering students. The robot should possess the capability to ascend stairs, navigate around obstacles, and unlock doors.
                             </p>
                         </div>
