@@ -129,12 +129,14 @@
                                 <source src="videos/risksis robot.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-                            <div id="STLRisksisRobot" style="width: 60%; height: 500px;"></div>
+                            <div  style="width: 60%; height: 500px;">
+                                <canvas id="STLRisksisRobot"></canvas>
+                            </div>
                             <script>
 
                                 // Load ASCII STL model
-                            
                                 var scene = new xeogl.Scene({
+                                    canvas: "STLRisksisRobot",
                                     transparent: true
                                 });
                             
