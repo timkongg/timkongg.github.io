@@ -130,7 +130,7 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div>
-                                <canvas id="STLRisksisRobot"  style="width: 60%; height: 300px; background-color: black;"></canvas>
+                                <canvas id="STLRisksisRobot"  style="width: 60%;  background-color: black;"></canvas>
                                 <script>
 
                                     // Load ASCII STL model
@@ -177,7 +177,7 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div>
-                                <canvas id="STLBattery"  style="width: 60%; height: 300px; background-color: black;"></canvas>
+                                <canvas id="STLBattery"  style="width: 60%;  background-color: black;"></canvas>
                                 <script>
 
                                     // Load ASCII STL model
@@ -214,7 +214,7 @@
                                 </script>
                             </div>
                             <div>
-                                <canvas id="STLSteering"  style="width: 60%; height: 300px; background-color: black;"></canvas>
+                                <canvas id="STLSteering"  style="width: 60%;  background-color: black;"></canvas>
                                 <script>
 
                                     // Load ASCII STL model
@@ -251,7 +251,7 @@
                                 </script>
                             </div>
                             <div>
-                                <canvas id="STLPedal"  style="width: 60%; height: 300px; background-color: black;"></canvas>
+                                <canvas id="STLPedal"  style="width: 60%;  background-color: black;"></canvas>
                                 <script>
 
                                     // Load ASCII STL model
@@ -301,7 +301,7 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div>
-                                <canvas id="STLRescueRobot"  style="width: 60%; height: 300px; background-color: black;"></canvas>
+                                <canvas id="STLRescueRobot"  style="width: 60%;  background-color: black;"></canvas>
                                 <script>
 
                                     // Load ASCII STL model
@@ -573,5 +573,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            const canvases = document.querySelectorAll('.canvas');
+            
+            function resizeCanvases() {
+                canvases.forEach(canvas => {
+                    const container = canvas.parentElement;
+                    const size = container.clientWidth;
+                    canvas.width = size;
+                    canvas.height = size;    
+                });
+            }
+        
+            resizeCanvases();
+        
+            window.addEventListener('resize', resizeCanvases);
+        </script>
     </body>
 </html>
