@@ -577,7 +577,7 @@
         <script>
             const canvases = document.querySelectorAll('canvas');
             function resizeCanvas(canvas) {
-                canvas.height = canvas.width;
+                canvas.height = canvas.width * 0.5625;
               }
             canvases.forEach(canvas => {
                 resizeCanvas(canvas);
