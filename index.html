@@ -134,14 +134,14 @@
                                 <script>
 
                                     // Load ASCII STL model
-                                    var scene = new xeogl.Scene({
+                                    var RRscene = new xeogl.Scene({
                                         canvas: "STLRisksisRobot",
                                         transparent: true
                                     });
                                 
-                                    xeogl.setDefaultScene(scene);
+                                    xeogl.setDefaultScene(RRscene);
                                 
-                                    var model = new xeogl.STLModel({
+                                    var RRmodel = new xeogl.STLModel({
                                         src: "CAD/RisksisRobot.stl",
                                         smoothNormals: true
                                     });
@@ -152,16 +152,16 @@
                                 
                                     // Initial camera position
                                 
-                                    var camera = scene.camera;
+                                    var RRcamera = RRscene.camera;
                                 
-                                    camera.eye = [820, 605, 818];
-                                    camera.look = [10.90, 10.90, 8];
-                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                    RRcamera.eye = [820, 605, 818];
+                                    RRcamera.look = [10.90, 10.90, 8];
+                                    RRcamera.up = [-0.236, 0.8853, -0.371246];
                                 
                                     // Orbit camera
                                 
-                                    scene.on("tick", function () {
-                                        camera.orbitYaw(-0.2);
+                                    RRscene.on("tick", function () {
+                                        RRcamera.orbitYaw(-0.2);
                                     });
                                 
                                 </script>
@@ -181,14 +181,14 @@
                                 <script>
 
                                     // Load ASCII STL model
-                                    var scene = new xeogl.Scene({
+                                    var Bscene = new xeogl.Scene({
                                         canvas: "STLBattery",
                                         transparent: true
                                     });
                                 
-                                    xeogl.setDefaultScene(scene);
+                                    xeogl.setDefaultScene(Bscene);
                                 
-                                    var model = new xeogl.STLModel({
+                                    var Bmodel = new xeogl.STLModel({
                                         src: "CAD/BatteryBox.stl",
                                         smoothNormals: true
                                     });
@@ -199,16 +199,16 @@
                                 
                                     // Initial camera position
                                 
-                                    var camera = scene.camera;
+                                    var Bcamera = Bscene.camera;
                                 
-                                    camera.eye = [820, 605, 818];
-                                    camera.look = [10.90, 10.90, 8];
-                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                    Bcamera.eye = [820, 605, 818];
+                                    Bcamera.look = [10.90, 10.90, 8];
+                                    Bcamera.up = [-0.236, 0.8853, -0.371246];
                                 
                                     // Orbit camera
                                 
-                                    scene.on("tick", function () {
-                                        camera.orbitYaw(-0.2);
+                                    Bscene.on("tick", function () {
+                                        Bcamera.orbitYaw(-0.2);
                                     });
                                 
                                 </script>
@@ -218,15 +218,15 @@
                                 <script>
 
                                     // Load ASCII STL model
-                                    var scene = new xeogl.Scene({
+                                    var Sscene = new xeogl.Scene({
                                         canvas: "STLSteering",
                                         transparent: true
                                     });
                                 
-                                    xeogl.setDefaultScene(scene);
+                                    xeogl.setDefaultScene(Sscene);
                                 
-                                    var model = new xeogl.STLModel({
-                                        src: "CAD/Steering.stl",
+                                    var Smodel = new xeogl.STLModel({
+                                        src: "CAD/Steering.STL",
                                         smoothNormals: true
                                     });
                                 
@@ -236,16 +236,16 @@
                                 
                                     // Initial camera position
                                 
-                                    var camera = scene.camera;
+                                    var Scamera = Sscene.camera;
                                 
-                                    camera.eye = [820, 605, 818];
-                                    camera.look = [10.90, 10.90, 8];
-                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                    Scamera.eye = [820, 605, 818];
+                                    Scamera.look = [10.90, 10.90, 8];
+                                    Scamera.up = [-0.236, 0.8853, -0.371246];
                                 
                                     // Orbit camera
                                 
-                                    scene.on("tick", function () {
-                                        camera.orbitYaw(-0.2);
+                                    Sscene.on("tick", function () {
+                                        Scamera.orbitYaw(-0.2);
                                     });
                                 
                                 </script>
@@ -255,15 +255,15 @@
                                 <script>
 
                                     // Load ASCII STL model
-                                    var scene = new xeogl.Scene({
+                                    var Pscene = new xeogl.Scene({
                                         canvas: "STLPedal",
                                         transparent: true
                                     });
                                 
-                                    xeogl.setDefaultScene(scene);
+                                    xeogl.setDefaultScene(Pscene);
                                 
-                                    var model = new xeogl.STLModel({
-                                        src: "CAD/Pedal.stl",
+                                    var Pmodel = new xeogl.STLModel({
+                                        src: "CAD/Pedal.STL",
                                         smoothNormals: true
                                     });
                                 
@@ -273,16 +273,16 @@
                                 
                                     // Initial camera position
                                 
-                                    var camera = scene.camera;
+                                    var Pcamera = Pscene.camera;
                                 
-                                    camera.eye = [820, 605, 818];
-                                    camera.look = [10.90, 10.90, 8];
-                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                    Pcamera.eye = [820, 605, 818];
+                                    Pcamera.look = [10.90, 10.90, 8];
+                                    Pcamera.up = [-0.236, 0.8853, -0.371246];
                                 
                                     // Orbit camera
                                 
-                                    scene.on("tick", function () {
-                                        camera.orbitYaw(-0.2);
+                                    Pscene.on("tick", function () {
+                                        Pcamera.orbitYaw(-0.2);
                                     });
                                 
                                 </script>
@@ -305,15 +305,15 @@
                                 <script>
 
                                     // Load ASCII STL model
-                                    var scene = new xeogl.Scene({
+                                    var REscene = new xeogl.Scene({
                                         canvas: "STLRescueRobot",
                                         transparent: true
                                     });
                                 
-                                    xeogl.setDefaultScene(scene);
+                                    xeogl.setDefaultScene(REscene);
                                 
-                                    var model = new xeogl.STLModel({
-                                        src: "CAD/RescueRobot.stl",
+                                    var REmodel = new xeogl.STLModel({
+                                        src: "CAD/RescueRobot.STL",
                                         smoothNormals: true
                                     });
                                 
@@ -323,16 +323,16 @@
                                 
                                     // Initial camera position
                                 
-                                    var camera = scene.camera;
+                                    var REcamera = REscene.camera;
                                 
-                                    camera.eye = [820, 605, 818];
-                                    camera.look = [10.90, 10.90, 8];
-                                    camera.up = [-0.236, 0.8853, -0.371246];
+                                    REcamera.eye = [820, 605, 818];
+                                    REcamera.look = [10.90, 10.90, 8];
+                                    REcamera.up = [-0.236, 0.8853, -0.371246];
                                 
                                     // Orbit camera
                                 
-                                    scene.on("tick", function () {
-                                        camera.orbitYaw(-0.2);
+                                    REscene.on("tick", function () {
+                                        REcamera.orbitYaw(-0.2);
                                     });
                                 
                                 </script>
