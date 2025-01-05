@@ -576,19 +576,19 @@
 
         <script>
             const canvases = document.querySelectorAll('.canvas');
-            
-            function resizeCanvases() {
-                canvases.forEach(canvas => {
-                    const container = canvas.parentElement;
-                    const size = container.clientWidth;
-                    canvas.width = size;
-                    canvas.height = size;    
-                });
-            }
+
+            canvases.forEach(canvas => {
+                //const ctx = canvas.getContext('2d');
+                //canvas.width = canvas.height = 300; // Example size
         
-            resizeCanvases();
+                // Event listener for resizing
+                function resizeCanvas() {
+                    canvas.height = canvas.width
+                }
         
-            window.addEventListener('resize', resizeCanvases);
+                resizeCanvas(); // Initial resize        
+                window.addEventListener('resize', resizeCanvas);
+            });
         </script>
     </body>
 </html>
