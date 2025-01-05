@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/xeogl.js"></script>
+        <script src="js/STLModel.js"></script>
 
     </head>
     <body id="page-top">
@@ -127,6 +129,41 @@
                                 <source src="videos/risksis robot.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                            <div id="STLRisksisRobot" style="width: 60%; height: 500px;"></div>
+                            <script>
+
+                                // Load ASCII STL model
+                            
+                                var scene = new xeogl.Scene({
+                                    transparent: true
+                                });
+                            
+                                xeogl.setDefaultScene(scene);
+                            
+                                var model = new xeogl.STLModel({
+                                    src: "CAD/RisksisRobot.stl",
+                                    smoothNormals: true
+                                });
+                            
+                                // User camera control
+                            
+                                new xeogl.CameraControl();
+                            
+                                // Initial camera position
+                            
+                                var camera = scene.camera;
+                            
+                                camera.eye = [37.24, 45.17, -15.02];
+                                camera.look = [10.90, 10.90, 8];
+                                camera.up = [-0.58, 0.72, 0.35];
+                            
+                                // Orbit camera
+                            
+                                scene.on("tick", function () {
+                                 //   camera.orbitYaw(-0.2);
+                                });
+                            
+                            </script>
                         </div>
                     </div>   
 
