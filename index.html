@@ -1,597 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Personal portfolio of Tim Kong</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="js/xeogl.js"></script>
-        <script src="js/STLModel.js"></script>
-
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Tim Kong</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                </ul>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Software and ML Portfolio of Tim Kong" />
+    <meta name="author" content="Tim Kong" />
+    <title>Tim Kong - Software & ML Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Tim Kong</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Profile" /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            <li class="nav-item"><a class="nav-link" href="me.html">Mechanical Portfolio</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid p-0">
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">Tim <span class="text-primary">Kong</span></h1>
+            <div class="subheading mb-5">
+                Vancouver, BC · +1 (778) 227-2483 · <a href="mailto:hkong43@gatech.edu">hkong43@gatech.edu</a>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Tim
-                        <span class="text-primary" style="color: blue;">Kong</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Vancouver, BC, Canada · +1 (778) 227-2483
-                        <a href="mailto:hkong43@gatech.edu">hkong43@gatech.edu</a>
-                    </div>
-                    <p class="lead mb-5">
-                        I am an R&D engineer and aspiring computer scientist with over four years of experience in the semiconductor packaging industry and robotics startups. My expertise lies in physics simulation, algorithm development, control systems, and software engineering. I have a proven track record of developing simulation management systems, automation tools, and machine learning models that drive efficiency and accuracy.
-<br/>
-Currently, I am pursuing a Master of Science in Computer Science with a Machine Learning specialization at Georgia Tech, where I am expanding my skills in full-stack development, system design, and artificial intelligence. My passion lies in solving complex problems at the intersection of robotics, computer vision, and machine learning.
-<br/>
-I am constantly seeking opportunities to innovate and grow, working toward a successful career in the tech industry. 
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/timkongcae/?trk=opento_sprofile_details"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/timkongg"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects -->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <h3>Computer Science</h3>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>Computer vision project using particle filters to do object tracking - 2024</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/Object Tracking.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>   
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>Activity Classification using Motion History Image - 2024</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/MHI.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <p>This is a GaTech Computer Vision project using motion history image to do activity recognition. An hierarchical classifier is used to boost the final accuracy to 94.4%. <br>
-                            <a href="files/report.pdf">View the report</a>
-                            </p>
-                        </div>
-                    </div>  
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>Finite state machine - Prison dodge ball tournament - 2024</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/Kong_vs_Clelland_(Source).m4v" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <p>This event is a GaTech GameAI class project using Unity3D engine. The tournament has 147 participants, where I emerged as the champion. My final record stands at 34.0 wins, 3.0 losses, and 3.0 ties.</p>
-                        </div>
-                    </div>  
-
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>AI racetrack using Reinforcement Learning (unity mlagent) - 2024</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/RL racetrack.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>  
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>Mobile mini archary game development using Unity engine - 2020</h4>
-                            <video controls muted style="width:30%">
-                                <source src="videos/Archery Go.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-
-                    <h3>Mechanical engineering and robotics</h3>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>Fever screening robot Risksis Z3 - 2020</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/risksis robot.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div>
-                                <canvas id="STLRisksisRobot"  style="width: 60%;  background-color: black;"></canvas>
-                                <script>
-
-                                    // Load ASCII STL model
-                                    var RRscene = new xeogl.Scene({
-                                        canvas: "STLRisksisRobot",
-                                        transparent: true
-                                    });
-                                
-                                    xeogl.setDefaultScene(RRscene);
-                                
-                                    var RRmodel = new xeogl.STLModel({
-                                        src: "CAD/RisksisRobot.stl",
-                                        smoothNormals: true
-                                    });
-                                
-                                    // User camera control
-                                
-                                    new xeogl.CameraControl();
-                                
-                                    // Initial camera position
-                                
-                                    var RRcamera = RRscene.camera;
-                                
-                                    RRcamera.eye = [-755.1122436523438,436.48638916015625,-776.0672607421875];
-                                    RRcamera.look = [101.50801086425781,-48.911659240722656,-154.3679962158203];
-                                    RRcamera.up = [0,1,0];
-                                
-                                    // Orbit camera
-                                
-                                    RRscene.on("tick", function () {
-                                        RRcamera.orbitYaw(-0.2);
-                                    });
-                                
-                                </script>
-                            </div>                            
-                        </div>
-                    </div>   
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>FSAE PolyU E-Formula Racing Team 03E - 2020</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/FSAE.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div>
-                                <canvas id="STLBattery"  style="width: 60%;  background-color: black;"></canvas>
-                                <script>
-
-                                    // Load ASCII STL model
-                                    var Bscene = new xeogl.Scene({
-                                        canvas: "STLBattery",
-                                        transparent: true
-                                    });
-                                
-                                    xeogl.setDefaultScene(Bscene);
-                                
-                                    var Bmodel = new xeogl.STLModel({
-                                        src: "CAD/BatteryBox.stl",
-                                        smoothNormals: true
-                                    });
-                                
-                                    // User camera control
-                                
-                                    new xeogl.CameraControl();
-                                
-                                    // Initial camera position
-                                
-                                    var Bcamera = Bscene.camera;
-                                
-                                    Bcamera.eye = [42.79756164550781,427.6888427734375,-359.8754577636719];
-                                    Bcamera.look = [-6.2374186515808105,-87.810302734375,-29.00151824951172];
-                                    Bcamera.up = [0,1,0];
-                                
-                                    // Orbit camera
-                                
-                                    Bscene.on("tick", function () {
-                                        Bcamera.orbitYaw(-0.2);
-                                    });
-                                
-                                </script>
-                            </div>
-                            <div>
-                                <canvas id="STLSteering"  style="width: 60%;  background-color: black;"></canvas>
-                                <script>
-
-                                    // Load ASCII STL model
-                                    var Sscene = new xeogl.Scene({
-                                        canvas: "STLSteering",
-                                        transparent: true
-                                    });
-                                
-                                    xeogl.setDefaultScene(Sscene);
-                                
-                                    var Smodel = new xeogl.STLModel({
-                                        src: "CAD/Steering.STL",
-                                        smoothNormals: true
-                                    });
-                                
-                                    // User camera control
-                                
-                                    new xeogl.CameraControl();
-                                
-                                    // Initial camera position
-                                
-                                    var Scamera = Sscene.camera;
-                                
-                                    Scamera.eye = [-328.55743408203125,440.3682861328125,233.4277801513672];
-                                    Scamera.look = [256.28314208984375,272.94940185546875,286.6375732421875];
-                                    Scamera.up = [0,1,0];
-                                
-                                    // Orbit camera
-                                
-                                    Sscene.on("tick", function () {
-                                        Scamera.orbitYaw(-0.2);
-                                    });
-                                
-                                </script>
-                            </div>
-                            <div>
-                                <canvas id="STLPedal"  style="width: 60%;  background-color: black;"></canvas>
-                                <script>
-
-                                    // Load ASCII STL model
-                                    var Pscene = new xeogl.Scene({
-                                        canvas: "STLPedal",
-                                        transparent: true
-                                    });
-                                
-                                    xeogl.setDefaultScene(Pscene);
-                                
-                                    var Pmodel = new xeogl.STLModel({
-                                        src: "CAD/Pedal.STL",
-                                        smoothNormals: true
-                                    });
-                                
-                                    // User camera control
-                                
-                                    new xeogl.CameraControl();
-                                
-                                    // Initial camera position
-                                
-                                    var Pcamera = Pscene.camera;
-                                
-                                    Pcamera.eye = [141.08937072753906,233.06790161132812,-81.20074462890625];
-                                    Pcamera.look = [89.14903259277344,135.90017700195312,300.4701232910156];
-                                    Pcamera.up = [0,1,0];
-                                
-                                    // Orbit camera
-                                
-                                    Pscene.on("tick", function () {
-                                        Pcamera.orbitYaw(-0.2);
-                                    });
-                                
-                                </script>
-                            </div>
-                            <p>Formula SAE is a student design competition organized by SAE International. The competition was started in 1980 by the SAE student branch at the University of Texas at Austin.<br>
-                                I am the head accumulator (battery box) designer in season 2020, and the steering and pedal designer in season 2019.
-                            </p>
-                        </div>
-                    </div>  
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4>Rescue robot project (HK PolyU) - 2018</h4>
-                            <video controls style="width: 60%">
-                                <source src="videos/Rescue Robot.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div>
-                                <canvas id="STLRescueRobot"  style="width: 60%;  background-color: black;"></canvas>
-                                <script>
-
-                                    // Load ASCII STL model
-                                    var REscene = new xeogl.Scene({
-                                        canvas: "STLRescueRobot",
-                                        transparent: true
-                                    });
-                                
-                                    xeogl.setDefaultScene(REscene);
-                                
-                                    var REmodel = new xeogl.STLModel({
-                                        src: "CAD/RescueRobot.STL",
-                                        smoothNormals: true
-                                    });
-                                
-                                    // User camera control
-                                
-                                    new xeogl.CameraControl();
-                                
-                                    // Initial camera position
-                                
-                                    var REcamera = REscene.camera;
-                                
-                                    REcamera.eye = [1389.308837890625,109.32554626464844,46.41400146484375];
-                                    REcamera.look = [1019.7615356445312,216.92828369140625,178.94839477539062];
-                                    REcamera.up = [0,1,0];
-                                
-                                    // Orbit camera
-                                
-                                    REscene.on("tick", function () {
-                                        REcamera.orbitYaw(-0.2);
-                                    });
-                                
-                                </script>
-                            </div>
-                            <p>This project involves designing a rescue robot in collaboration with a team of mechanical engineering and electronic engineering students. The robot should possess the capability to ascend stairs, navigate around obstacles, and unlock doors.
-                            </p>
-                        </div>
-                    </div>  
-
-                </div>
-                
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">CAE Engineer</h3>
-                            <div class="subheading mb-3">ASMPT</div>
-                            <p>
-                                <ul>
-
-                                <li>Full stack development and system design of a simulation management system for over 100 users and managers from inception to deployment, using ASP.NET mvc and RESTful API</li>
-                                <li>Machine learning regression model development with simulation system data and PDE to predict module mechanical performance with 80% accuracy, serving as an assistant for mechanical designers</li>
-                                <li>Software development for physics simulation automation and data mining by 3D and graph theory algorithmic approaches which saved over 90% of task time</li>
-                                <li>Mechanical design, testing, and data analysis of precision module platform for semiconductor advanced packaging</li>
-                                <li>Advanced physics simulation of control system and vibration analysis for product performance evaluation before manufacturing stage</li>
-                            
-                            </ul>
-                            </p>
-                        
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep 2020 - Jul 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Mechatronic Engineer</h3>
-                            <div class="subheading mb-3">Risksis Techonology Ltd</div>
-                            <p>
-                                <ul>
-                                <li>Team leader in the startup robotic team, focusing on the architecture of a thermal camera robot for body temperature sensing</li>
-                                <li>Project management in a startup environment, with a quick prototype finished in 3 months</li>
-                                <li>Mechanical design of the thermal camera robot</li>
-                                <li>Robot motor control algorithm development with ROS platform</li>
-                            </ul>
-                            </p>
-                        
-                            </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Mar 2020 - Jun 2020</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Georgia Institute of Technology</h3>
-                            <div class="subheading mb-3">Master of Science</div>
-                            <div>Computer Science - Machine Learning specialization</div>
-                            <p>GPA: 4.00</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Expected graduration: Aug 2026</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Hong Kong Polytechnic University</h3>
-                            <div class="subheading mb-3">Bachelor of Engineering</div>
-                            <div>Mechanical Engineering</div>
-                            <p>GPA: 3.36</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep 2016 - Aug 2020</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <!--<div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>-->
-                    <div class="subheading mb-3">Programming Languages</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Python
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            C#
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            C++
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            JavaScript
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3">Software engineering</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Computer vision
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Machine learning and neural network
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Unity3D
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            GitHub
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3">Full-Stack development</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Html, css, JavaScript
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Asp.Net mvc
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            SQL Server
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Entity framework
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            RESTful API
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Json Web Token (JWT) authentication
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            chart.js, xzeogl
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3">Data analysis</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            PowerBI
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Design of experiments (DOE)
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3">Mechanical engineering and robotics</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            CAD: Solidworks, SolidEdge
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            CAE: ANSYS, Hyperworks
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Matlab, Comsol multiphysics
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mechanical vibration and precision module design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Control systems
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>I have a keen interest in projects that involve robotics, computer vision, and machine learning. During my free time, I also enjoy engaging in mini game development using the Unity engine. Designing a responsive agent and looking through their interaction with human is satisfying. </p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Diploma in Creative Mobile Game Design (Unity) - Fevaworks
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Master in Big Data Analytics with Power BI - Microsoft
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - Georgia Institute of Technology - Prison dodgeball tournament Fall 2024
-                        </li>                        
-                    </ul>
-                </div>
-            </section>
+            <p class="lead mb-5">
+                I am an R&D engineer with experience in robotics startups and the semiconductor industry. I specialize in computer vision, machine learning, control systems, and simulation. I'm pursuing a Master of Science in Computer Science (Machine Learning specialization) at Georgia Tech, and am passionate about AI-driven solutions and software development.
+            </p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/timkongcae/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/timkongg"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Projects - ML & Software</h2>
 
-        <script>
-            const canvases = document.querySelectorAll('canvas');
-            function resizeCanvas(canvas) {
-                canvas.height = canvas.width * 0.5625;
-              }
-            canvases.forEach(canvas => {
-                resizeCanvas(canvas);
-              });
-            
-            canvases.forEach(canvas => {
-                window.addEventListener('resize', () => {
-                  resizeCanvas(canvas);
-                });
-              });
-        </script>
-    </body>
+
+            <div class="project">
+                <h4>Reinforcement learning - Solving the overcooked-ai environment using CTDE MAPPO</h4>
+                    <video autoplay loop muted playsinline style="width: 60%">
+                        <source src="videos/counter_circuit_o_1order.mp4" type="video/mp4">
+                    </video>
+  <p>
+    In this project, I implemented <strong>Multi-Agent Proximal Policy Optimization (MAPPO)</strong> to solve coordination tasks in the cooperative <em>Overcooked</em> environment. The goal was to train two agents to cook and serve onion soups efficiently across three increasingly complex layouts.
+  </p>
+  <ul>
+    <li>Implemented <strong>Centralized Training with Decentralized Execution (CTDE)</strong> to enable agents to coordinate using a shared critic while maintaining independent policies at inference time.</li>
+    <li>Used <strong>shared advantage estimation</strong> from global state and joint observations to promote team-level success and discourage selfish behavior.</li>
+    <li>Demonstrated that without CTDE (e.g., individualized advantage estimation), agents tend to behave greedily, resulting in degraded cooperation and suboptimal team performance.</li>
+    <li>Addressed sparse and delayed rewards with <strong>reward shaping</strong> on intermediate subgoals (e.g., placing onions, picking up dishes/soups) using a geometric decay schedule to gradually shift focus to the main objective.</li>
+    <li>Trained actor-critic models using PyTorch with GAE, Smooth L1 critic loss, entropy regularization, and PPO-style clipped objectives to stabilize learning dynamics.</li>
+    <li>Achieved convergence across all layouts, with agents consistently delivering 7–11 soups per episode and specializing into asymmetric but cooperative roles.</li>
+  </ul>
+
+            </div>
+
+            <div class="project">
+                <h4>Reinforcement learning - solving lunar lander using SAC</h4>
+                <video  autoplay loop muted playsinline style="width: 60%">
+                    <source src="videos/rl-video-episode.mp4" type="video/mp4">
+                </video>
+                  <p>
+    This project explored the application of modern reinforcement learning algorithms to solve the continuous control problem in the <strong>LunarLanderContinuous-v3</strong> environment. The goal was to land a simulated lunar module safely using deep RL methods suited for continuous action spaces.
+  </p>
+  <ul>
+    <li><strong>Soft Actor-Critic (SAC)</strong> is selected for its off-policy learning, entropy-regularized exploration, stable value estimation with twin Q-networks, and superior efficiently in data sampling.</li>
+    <li>Trained the agent over 1000 episodes; learning proceeded through 3 phases:
+      <ul>
+        <li>Phase 1 (episode 50): Exploration and frequent crashes.</li>
+        <li>Phase 2 (episode 200): Suboptimal “hovering” policy to avoid crashes.</li>
+        <li>Phase 3 (episode 800): Consistent safe landings with average reward &gt; 200.</li>
+      </ul>
+    </li>
+    <li>Analyzed sensitivity to key hyperparameters:
+      <ul>
+        <li><strong>Entropy coefficient (α):</strong> Critical for balancing exploration–exploitation; improper tuning led to policy collapse or stagnation.</li>
+        <li><strong>Learning rate:</strong> High LR caused instability, low LR slowed convergence; 2e-4 achieved optimal balance.</li>
+        <li><strong>Target update rate (τ):</strong> A fast update rate (τ = 0.005) yielded stable critics; high τ led to value estimation noise and erratic actor updates.</li>
+      </ul>
+    </li>
+  </ul>
+            </div>
+
+           <div class="project">
+                <h4>MeshQuest: Benchmarking and Fine-Tuning Generative Models for Stylized 3D Game Assets</h4>
+                    <img src="images/meshquest.png" style="width: 30%">
+                    <img src="images/meshquest2.png" style="width: 30%">
+                    <img src="images/meshquest3.png" style="width: 30%">
+
+  <p>
+    This project evaluates and fine-tunes generative AI models for creating stylized 3D game assets from single-view images. We benchmarked four pretrained models—<strong>Hunyuan3D</strong>, <strong>OpenLRM</strong>, <strong>One-2-3-45</strong>, and <strong>Pixel2Mesh</strong>—on 16 curated assets and fine-tuned <strong>OpenLRM</strong> using a custom low-poly dataset to assess trade-offs between mesh quality, efficiency, and stylization.
+  </p>
+  <ul>
+    <li>Evaluated models using geometric metrics (Chamfer & Hausdorff distances), mesh complexity (face count), inference/render time, and a <strong>20-person human perceptual study</strong> ranking mesh quality.</li>
+    <li><strong>Hunyuan3D (diffusion-based)</strong> achieved the highest fidelity (HD: 0.16, CD: 0.08) but incurred long inference (13s) and GPU rendering time (2.96ms).</li>
+    <li><strong>OpenLRM (transformer-based)</strong> offered a strong balance between mesh quality (HD: 0.18), efficiency (8.5s), and scalability. It was selected for fine-tuning.</li>
+    <li>Fine-tuned OpenLRM on a dataset of 734 low-poly meshes across four categories (chairs, tables, chests, weapons). Used a frozen DINOv2 image encoder and triplane-based NeRF decoder with marching cubes mesh extraction.</li>
+    <li>Applied <strong>mixed precision training</strong>, <strong>cosine annealing with warmup</strong>, and careful regularization (AdamW, LR: 6e-5) to stabilize learning and prevent mode collapse.</li>
+    <li>Introduced <strong>TV loss</strong> for mesh smoothness and combined pixel & perceptual losses. Training converged in 150 epochs over 5400 steps on 2×H200 GPUs.</li>
+    <li>Observed improvements in point cloud structure and perceptual loss, but <strong>mesh fidelity remained limited</strong> due to the use of non-trainable marching cubes, which failed to preserve sharp edges or stylized features.</li>
+    <li>Identified major bottlenecks:
+      <ul>
+        <li>Dataset imbalance (e.g., only 29 chests vs. 297 weapons).</li>
+        <li>High intra-class variance and low novelty compared to pretraining data.</li>
+        <li>Mesh extraction limitations dominating final mesh quality.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    This project demonstrates practical benchmarking of generative 3D models, real-world challenges in domain-specific fine-tuning, and deep understanding of the 3D generative pipeline from rendering and NeRF to loss analysis. Future directions include using <strong>deep marching cubes</strong>, <strong>mesh tokenization</strong>, or <strong>mesh-aware LLMs</strong> to overcome current limitations.
+  </p>
+
+
+            </div>
+
+            <div class="project">
+                <h4>Object Tracking via Particle Filter - 2024</h4>
+                <video controls style="width: 60%">
+                    <source src="videos/Object Tracking.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="project">
+                <h4>Activity Classification with Motion History Image - 2024</h4>
+                <video controls style="width: 60%">
+                    <source src="videos/MHI.mp4" type="video/mp4">
+                </video>
+                <p>94.4% accuracy using hierarchical classifier.</p>
+            </div>
+            <div class="project">
+                <h4>Prison Dodgeball AI using Finite State Machine - 2024</h4>
+                <video controls style="width: 60%">
+                    <source src="videos/Kong_vs_Clelland_(Source).m4v" type="video/mp4">
+                </video>
+                <p>Winner among 147 participants, GameAI class project with Unity3D.</p>
+            </div>
+            <div class="project">
+                <h4>Mobile Archery Game (Unity Engine) - 2020</h4>
+                <video controls muted style="width:30%">
+                    <source src="videos/Archery Go.mov" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
+            <div class="mb-5">
+                <h3 class="mb-0">CAE Engineer</h3>
+                <div class="subheading mb-3">ASMPT</div>
+                <ul>
+                    <li>Full stack development of simulation management system for 100+ users using ASP.NET MVC and RESTful APIs</li>
+                    <li>Developed ML regression models to predict mechanical performance from PDE-simulated data</li>
+                    <li>Automated simulation tasks using 3D geometry processing and graph algorithms, cutting 90% task time</li>
+                    <li>Conducted simulation and software validation for precision module design in semiconductor packaging</li>
+                </ul>
+                <div class="text-primary">Sep 2020 - Jul 2024</div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Education</h2>
+            <div class="mb-5">
+                <h3>Georgia Institute of Technology</h3>
+                <div class="subheading mb-3">M.S. in Computer Science - Machine Learning</div>
+                <p>GPA: 4.00 | Expected Graduation: Apl 2026</p>
+            </div>
+            <div>
+                <h3>Hong Kong Polytechnic University</h3>
+                <div class="subheading mb-3">B.Eng in Mechanical Engineering</div>
+                <p>GPA: 3.36 | Sep 2016 - Aug 2020</p>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Python, C++, C#, JavaScript</li>
+            </ul>
+            <div class="subheading mb-3 mt-4">Frameworks and libraries</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>PyTorch, TensorFlow, Keras, OpenCV, TorchVision, Transformers, YOLO, MMAction2, DeepSORT</li>
+            </ul>
+            <div class="subheading mb-3 mt-4">ML Techniques</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>CNNs, RNNs, GANs, Diffusion Models, LLMs, GNNs, Reinforcement Learning (SAC, PPO, TD3, DDPG)</li>
+            </ul>
+            <div class="subheading mb-3 mt-4">Software Engineering</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Computer Vision, Machine Learning, Unity3D, GitHub</li>
+            </ul>
+            <div class="subheading mb-3 mt-4">Full-Stack Development</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>HTML, CSS, JS, ASP.NET MVC, SQL Server, Entity Framework, REST API, JWT</li>
+            </ul>
+            <div class="subheading mb-3 mt-4">Data Analysis</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>PowerBI, Design of Experiments (DOE)</li>
+            </ul>
+        </div>
+    </section>
+    <hr class="m-0" />
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
